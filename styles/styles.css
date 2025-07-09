@@ -72,15 +72,6 @@ h1 {
     border-left: 4px solid steelblue;
 }
 
-/* Foote */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    margin-top: 2rem;
-}
-
 /* Date */
 .date {
     font-size: 0.8rem;
