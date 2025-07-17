@@ -1,12 +1,5 @@
-header {
-    background-color: steelblue;
-    padding: 1rem;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 1rem;
+h1 {
+    color: steelblue;
 }
 
 main {
@@ -16,16 +9,47 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    color: steelblue;
-}
-
 main img {
     width: 200px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+}
+
+p {
+    padding: 0;
+}
+
+aside {
+    width: 20em;
+    margin: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+aside h2{
+    width: 20em;
+    margin: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: steelblue;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
 }
 
 .tamaulipas-section {
