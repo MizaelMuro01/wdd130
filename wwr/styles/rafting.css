@@ -116,6 +116,7 @@ a {
     justify-self: center;
     align-self: center;
 }
+/* ccc*/
 
 /* Sets default width and centers content in browser */
 header,
@@ -125,13 +126,12 @@ footer {
     margin: auto;
 }
 
-
 /* header items styling */
 header {
     display: grid;
     grid-template-columns: 200px auto;
     align-items: center;
-    background-color: #484029;
+    background-color: var(--accent2-color);
     color: var(--white);
 }
 
@@ -153,7 +153,7 @@ nav a {
 
 nav a:hover {
     background-color: #fff;
-    color: #484029;
+    color: var(--accent2-color);
 }
 
 footer {
@@ -161,7 +161,7 @@ footer {
     grid-template-columns: 3fr 1fr 1fr;
     align-items: center;
     padding: 1rem;
-    background-color: #242321;
+    background-color: var(--primary-color);
     margin-top: 100px;
 }
 
@@ -185,9 +185,7 @@ footer p {
 .socialmedia img {
     width: 2rem;
 }
-
-
-
+/* ccc */
 /* default grid layout for all pages */
 .grid {
     display: grid;
@@ -223,11 +221,7 @@ footer p {
     background-color: var(--button-color-hover);
 }
 
-/***************************************
-*
-*   defaults for all pages - End
-*
-****************************************/
+/*DEFAULTS FOR ALL PAGES*/
 
 /* Homepage Styling */
 .hero-msg {
@@ -237,7 +231,7 @@ footer p {
 .home-title {
     margin: 1rem 0;
     color: var(--white);
-    background-color: #13181475;
+    background-color: #00349575;
     justify-self: center;
     min-width: 50rem;
     text-align: center;
@@ -247,7 +241,7 @@ footer p {
 .home-subtitle {
     margin: 20px 0;
     color: var(--white);
-    background-color: #13181475;
+    background-color: #00349575;
     justify-self: center;
 }
 
@@ -286,7 +280,6 @@ footer p {
 
 .newsletter-form label {
     grid-column: 1;
-    
     text-align: right;
     color: var(--white);
     margin: 0;
@@ -294,7 +287,6 @@ footer p {
 
 .newsletter-form input {
     grid-column: 2;
-    
 }
 
 .newsletter-form button {
@@ -316,7 +308,6 @@ footer p {
     align-items: center;
 }
 
-
 .rapids-card {
     grid-column: 2 / 4;
     grid-row: 2;
@@ -336,7 +327,7 @@ footer p {
     border: 10px solid #fff;
     width: 100%;
     transition: transform .5s;
-    box-shadow: 5px 5px 10px #6f7364;
+    box-shadow: 5px 5px 10px var(--accent3-color);
     margin: 20px 0;
 }
 
@@ -369,9 +360,9 @@ footer p {
     grid-column: 7/12;
     grid-row: 5/7;
     color: var(--white);
-    background-color: var(--white);
+    background-color: var(--primary-color);
     padding: 35px;
-    box-shadow: 5px 5px 10px #6f7364;
+    box-shadow: 5px 5px 10px var(--accent3-color);
     line-height: 1.5em;
     display: flex;
     flex-direction: column;
@@ -381,6 +372,7 @@ footer p {
     line-height: 1em;
 }
 
+/*CCC*/
 
 /*Modal CSS*/
 
@@ -402,14 +394,12 @@ footer p {
     z-index: 999;
     visibility: hidden;
     opacity: 0;
-    /* pointer-events: none; */
     transition: all 0.3s;
 }
 
 .modal-window:target {
     visibility: visible;
     opacity: 1;
-    /* pointer-events: auto; */
 }
 
 .modal-window>div {
@@ -440,7 +430,7 @@ footer p {
 }
 
 .modal-close:hover {
-    color: black;
+    color: var(--black);
 }
 
 /* about us styling */
@@ -450,7 +440,7 @@ footer p {
     width: 100%;
     text-align: center;
     color: #fff;
-    background-color: rgba(56, 59, 103, 0.6);
+    background-color: rgba(0, 52, 149, 0.6);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -469,23 +459,16 @@ footer p {
 }
 
 .abs-article p {
-    color: #1e1a1a;
-    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+    color: var(--black);
     font-size: x-large;
     text-align: center;
 }
-
-
-
-
 
 .history-section {
     margin: 50px 0;
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
-    /* This creates three columns */
     gap: 20px;
-    /* This is the gap between columns */
     align-items: center;
     text-align: justify;
 }
@@ -493,34 +476,25 @@ footer p {
 .history-img {
     grid-column: 2 / 3;
     grid-row: 2;
-    /* This places the image in the center column */
 }
 
 .history-section p:first-of-type {
     grid-column: 1 / 2;
     grid-row: 2;
-    /* This places the first paragraph in the left column */
     padding: 0 20px;
-    /* Add padding for better text readability */
 }
 
 .history-section p:last-of-type {
     grid-column: 3 / 4;
     grid-row: 2;
-    /* This places the second paragraph in the right column */
     padding: 0 20px;
-    /* Add padding for better text readability */
 }
 
-/* Ensure the h2 is full-width above the columns */
 .history-section>h2 {
     grid-column: 1 / -1;
     grid-row: 1;
-    /* This spans the h2 across all columns */
     text-align: center;
-    /* Center the text of the h2 */
     padding-bottom: 1rem;
-    /* Add some space below the h2 */
 }
 
 .adventures {
@@ -542,7 +516,6 @@ figure:nth-of-type(odd) {
     background-color: var(--accent1-color);
     color: var(--nav-link-color);
     align-self: center;
-
 }
 
 figure:nth-of-type(even) {
@@ -569,7 +542,9 @@ figcaption {
     margin: 50px 0;
 }
 
+
 /*CSS Contactanos - Contact to us*/
+
 
 .contactus {
     margin: 50px auto;
@@ -580,7 +555,6 @@ figcaption {
     background-color: var(--secondary-color);
     padding: 3.2rem 0;
     height: 100%;
-
 }
 
 .con-hero {
@@ -595,7 +569,7 @@ figcaption {
     grid-column: 1/7;
     grid-row: 2/4;
     margin: 2rem 3rem;
-    background-color: rgb(222 249 255 / 88%);
+    background-color: rgba(134, 207, 255, 0.88);
 }
 
 .contact-fields {
@@ -614,7 +588,7 @@ select {
 label {
     margin-top: 20px;
     margin-bottom: 5px;
-    color: #004d4a;
+    color: var(--accent2-color);
     letter-spacing: .5px;
 }
 
@@ -627,15 +601,15 @@ input:focus,
 textarea:focus,
 select:focus {
     border: 1px solid #d81616;
-    background-color: #1cfc63;
-    color: #3f3f3f;
+    background-color: #86CFFF;
+    color: var(--primary-color);
 }
 
 .submit {
     padding: 1.5em;
     margin: 1em;
-    background-color: #040466;
-    color: #f3f3f3;
+    background-color: var(--primary-color);
+    color: var(--white);
     border: 1px solid #3e3e3e;
     box-shadow: 5px 3px 3px #000;
     border-radius: 25px;
@@ -649,22 +623,21 @@ select:focus {
     grid-row: 2/4;
     display: grid;
     margin: 2rem 3rem;
-    background-color: rgb(9, 7, 17);
+    background-color: var(--primary-color);
     padding: 1rem 0;
 }
 
 .address h2 {
-    color: #fff;
+    color: var(--white);
 }
 
 .add-phone {
     grid-row: 2;
-
 }
 
 .add-phone a,
 .add-phone address {
-    color: #fff;
+    color: var(--white);
     font-size: 24px;
     font-weight: 500;
     display: block;
@@ -698,13 +671,10 @@ select:focus {
     grid-column: 10/12;
 }
 
-
 .hrule {
-    border: 10px solid rgba(4, 17, 252, 0.644);
+    border: 10px solid rgba(0, 52, 149, 0.644);
     grid-column: 1/-1;
-
 }
-
 
 /*Opciones de viaje - Tripes page CSS*/
 .trips-grid {
@@ -749,7 +719,7 @@ select:focus {
 .trip-cost:nth-of-type(odd),
 .trip-duration:nth-of-type(even),
 .trip-name:nth-of-type(even) {
-    background-color: #ccc3ef;
+    background-color: var(--accent3-color);
 }
 
 .table-heading {
@@ -809,6 +779,7 @@ select:focus {
     font-weight: 700;
     font-size: 1.25em;
 }
+
 
 /*Diseño de cuadriculado* *Grid Layout Placements*/
 
@@ -896,7 +867,6 @@ select:focus {
     grid-row: 5/7;
 }
 
-
 .rows6-8 {
     grid-row: 6/8;
 }
@@ -908,11 +878,11 @@ select:focus {
 .size-6 {
     width: 1em;
     height: 1em;
-    fill: #fff;
-    stroke: #fff
+    fill: var(--white);
+    stroke: var(--white)
 }
 
 nav a>.size-6:hover, .size-6:hover {
-    stroke: #484029;
-    fill: #484029;
+    stroke: var(--accent2-color);
+    fill: var(--accent2-color);
 }
