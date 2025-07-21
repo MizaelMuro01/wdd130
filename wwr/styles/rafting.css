@@ -2,32 +2,32 @@
 :root {
 
     /* Dark color for primary text */
-    --primary-color: #4d4c49;
+    --primary-color: #003495;
 
     /* Secondary color, slightly lighter */
-    --secondary-color: #484029;
+    --secondary-color: #6250FF;
 
     /* Accent color 1 */
-    --accent1-color: #484029;
+    --accent1-color: #6250FF;
 
     /* Accent color 2 */
-    --accent2-color: #37471e;
+    --accent2-color: #16639E;
 
     /* Accent color 3 */
-    --accent3-color: #254768;
+    --accent3-color: #86CFFF;
 
     /* White color */
-    --white: #f3eded;
+    --white: #FFFFFF;
 
     /* Black color */
     --black: #0e0c0c;
 
     /* Button Background colors */
-    --button-color: #714a0e;
-    --button-color-hover: #f3a530;
+    --button-color: #003495;
+    --button-color-hover: #6250FF;
 
-    --cta-button-color: #1bdd01;
-    --cta-button-color-hover: #04083e;
+    --cta-button-color: #16639E;
+    --cta-button-color-hover: #003495;
 
     /* Top Navigation Colors */
     /* Background color for navigation bar */
