@@ -199,8 +199,9 @@ footer p {
 }
 
 .hero>img {
-    display: block;
+    display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 /* Button styling */
