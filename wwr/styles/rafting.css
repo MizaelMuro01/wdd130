@@ -126,10 +126,10 @@ footer {
     margin: auto;
 }
 
-/* header items styling */
+/* header items styling - IMAGEN LOGO*/
 header {
     display: grid;
-    grid-template-columns: 200px auto;
+    grid-template-columns: 150px auto;
     align-items: center;
     background-color: var(--accent2-color);
     color: var(--white);
