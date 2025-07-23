@@ -129,7 +129,7 @@ footer {
 /* header items styling - IMAGEN LOGO*/
 header {
     display: grid;
-    grid-template-columns: 100px auto;
+    grid-template-columns: 100px auto 1fr;
     align-items: center;
     background-color: var(--accent2-color);
     color: var(--white);
