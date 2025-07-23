@@ -126,20 +126,28 @@ footer {
     margin: auto;
 }
 
-/* header items styling - IMAGEN LOGO*/
+/* header items styling - IMAGEN LOGO */
 header {
     display: grid;
-    grid-template-columns: 100px auto;
+    grid-template-columns: 100px auto; /* Logo + espacio para nav */
     align-items: center;
     background-color: var(--accent2-color);
     color: var(--white);
 }
 
 nav {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    justify-items: center;
+    /* Elimina display:grid y propiedades relacionadas */
+    display: block; /* O flex si prefieres */
     font-family: var(--heading-font);
+}
+
+.navigation {
+    display: flex; /* Cambia a flex para alinear horizontalmente */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end; /* Alinea a la derecha */
+    gap: 1rem; /* Espacio entre elementos */
 }
 
 nav a {
@@ -149,22 +157,13 @@ nav a {
     color: #fff;
     display: flex;
     align-items: center;
+    text-decoration: none; /* Asegura que no tenga subrayado */
 }
 
 nav a:hover {
     background-color: #fff;
     color: var(--accent2-color);
 }
-
-footer {
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--primary-color);
-    margin-top: 100px;
-}
-
 
 /* Footer Styling */
 footer p {
