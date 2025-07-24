@@ -118,51 +118,45 @@ a {
 }
 /* ccc*/
 
-/* Sets default width and centers content in browser */
-/* Header y navegación - Versión corregida */
+/* Header Grid Layout */
 header {
     display: grid;
-    grid-template-columns: 100px 1fr; /* Logo + espacio para nav */
+    grid-template-columns: 120px 1fr 2fr;
     align-items: center;
     background-color: var(--accent2-color);
-    padding: 0 2rem; /* Añade padding a los lados */
+    padding: 1rem;
 }
 
-nav {
-    width: 100%;
-}
-
+/* Nav Flex Layout */
 .navigation {
     display: flex;
+    justify-content: space-around;
     list-style: none;
     margin: 0;
     padding: 0;
-    justify-content: space-between; /* Distribución perfecta */
-    max-width: 800px; /* Ajusta este valor según necesites */
-    margin: 0 auto; /* Centra el nav */
 }
 
-.navigation li {
-    flex: 1; /* Cada item ocupa igual espacio */
-    text-align: center;
-}
-
-nav a {
-    padding: 1rem 0.5rem;
-    font-size: 1.25rem;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem; /* Espacio entre icono y texto */
+.navigation a {
+    color: white;
     text-decoration: none;
-    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
 }
 
-nav a:hover {
-    background-color: #fff;
-    color: var(--accent2-color);
-}footer {
+/* Adventures Section Grid */
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+/* Footer Social Icons */
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+footer {
     display: grid;
     grid-template-columns: 3fr 1fr 1fr;
     align-items: center;
@@ -179,13 +173,6 @@ footer p {
 
 .footer-menu {
     color: #fff;
-}
-
-/* Social media link styling */
-.socialmedia {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
 }
 
 .socialmedia img {
@@ -503,7 +490,7 @@ footer p {
     text-align: center;
     padding-bottom: 1rem;
 }
-
+/* nota de adventures##########################################################33*/
 .adventures {
     margin: 50px 0;
     display: grid;
