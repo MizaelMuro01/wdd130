@@ -130,7 +130,7 @@ header {
 /* Nav Flex Layout */
 .navigation {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -158,7 +158,7 @@ header {
 
 footer {
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-columns: 1fr auto;
     align-items: center;
     padding: 1rem;
     background-color: var(--primary-color);
