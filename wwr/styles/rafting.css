@@ -1,50 +1,43 @@
-/* Root CSS variables - Simplificadas */
+/* Root CSS variables - Versión simplificada pero compatible */
 :root {
     --primary-color: #003495;
     --secondary-color: #6250FF;
-    --accent-color: #16639E;
-    --light-accent: #86CFFF;
+    --accent1-color: #6250FF;
+    --accent2-color: #16639E;
+    --accent3-color: #86CFFF;
     --white: #FFFFFF;
     --black: #0e0c0c;
     --heading-font: 'Arvo', sans-serif;
     --paragraph-font: 'Oswald', sans-serif;
 }
 
-/* Base Styles */
+/* Reset básico */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: var(--paragraph-font);
-    line-height: 1.6;
-}
-
-/* Layout */
+/* Estructura principal */
 header, main, footer {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem;
 }
 
-/* Header */
+/* Header con Grid como en tu versión original */
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 120px 1fr;
     align-items: center;
-    background-color: var(--accent-color);
+    background-color: var(--accent2-color);
     padding: 1rem;
 }
 
-.logo {
-    width: 120px;
-}
-
+/* Nav con Flex como solicitó tu tutor */
 .navigation {
     display: flex;
-    gap: 1.5rem;
+    justify-content: flex-end;
+    gap: 2rem;
     list-style: none;
 }
 
@@ -56,15 +49,10 @@ header {
     gap: 0.5rem;
 }
 
-.size-6 {
-    width: 1em;
-    height: 1em;
-}
-
-/* Hero Section */
+/* Hero section - Manteniendo tu estructura */
 .hero {
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .hero img {
@@ -80,35 +68,50 @@ header {
     color: var(--white);
     background-color: rgba(0, 52, 149, 0.6);
     padding: 1rem;
+    font-size: 2.5rem;
 }
 
-/* History Section */
+.abs-article {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    right: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+}
+
+/* History section - Estructura grid como en tu original */
 .history {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
-    margin: 2rem 0;
+    margin: 3rem 0;
+    align-items: center;
+}
+
+.history h2 {
+    grid-column: 1 / -1;
     text-align: center;
 }
 
-.history img {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+.history-img {
+    grid-column: 2 / 3;
 }
 
-/* Adventures Section */
+/* Adventures section - Manteniendo tu diseño de 5 columnas */
 .adventures {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
     margin: 3rem 0;
 }
 
+.adventures h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
 .adventures figure {
-    background-color: var(--light-accent);
-    padding: 1rem;
-    border-radius: 8px;
     text-align: center;
 }
 
@@ -116,39 +119,39 @@ header {
     width: 100%;
     height: 150px;
     object-fit: cover;
-    border-radius: 4px;
 }
 
-.adventures figcaption {
-    margin-top: 0.5rem;
-    font-weight: bold;
-}
-
-/* Footer */
+/* Footer - Manteniendo tu estructura */
 footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
     background-color: var(--primary-color);
     color: var(--white);
-    text-align: center;
-    padding: 2rem 1rem;
-    margin-top: 2rem;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 
 .socialmedia {
     display: flex;
-    justify-content: center;
     gap: 1rem;
-    margin-top: 1rem;
 }
 
 .socialmedia img {
     width: 30px;
 }
 
-/* Responsive Adjustments */
-@media (min-width: 768px) {
-    .history {
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        text-align: left;
-    }
+/* Corrección para imágenes - nombres en minúsculas */
+/* Asegúrate de que los nombres de archivo sean:
+   - desolation.jpeg
+   - hermit.jpg
+   - lunch-time.jpg
+   - having-fun.jpg
+   - relaxing-on-the-river.jpg
+*/
+
+/* Corrección para figcaption */
+.adventures figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
 }
