@@ -82,3 +82,88 @@ footer{
 .social img{
     width: 3em;
 }
+
+header {
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    background-color: #003495;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    padding: 1em;
+    color: #fff;
+    font-family: var(--heading-font);
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #484848
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #242424;
+    margin-top: 100px;
+}
+
+footer p {
+    color: #fff
+}
+
+.footer-menu {
+    color: #fff;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 1rem
+}
+
+-sociallinks img {
+    width: 2rem;
+}
+
+.sociallinks a:hover {
+    background-color: unset;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 2em;
+    margin: 50px 0;
+}
+
+.history h2,
+.adventures h2 {
+    grid-column: 1/-1;
+    justify-self: center;
+    padding: 1em 0;
+}
+
+figure: nth-of-type ( odd) {
+    background-color: var(--accent1-color);
+    color: var(--nav-link-color);
+    align-self: center;
+}
+
+figure:nth-of-type(even) {
+    background-color: var(--accent2-color);
+    color: var(--nav-link-color);
+    align-self: center;
+}
+
+figcaption {
+    text-align: center;
+    padding: 1em 0;
+
+}
