@@ -61,7 +61,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    position: relative;  /* Necesario para el posicionamiento absoluto de los hijos */
+    position: absolute;  /* Necesario para el posicionamiento absoluto de los hijos */
     height: 100vh;      /* Ocupa el 100% del alto de la pantalla */
     width: 100%;        /* Ocupa el 100% del ancho */
     overflow: hidden;   /* Evita desbordamientos */
