@@ -67,8 +67,11 @@ nav a:hover {
 
 .hero > img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100vh;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    text-align: center;
 }
 
 .hero h1 {
