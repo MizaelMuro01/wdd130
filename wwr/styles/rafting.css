@@ -61,53 +61,42 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    position: relative;
-    margin-bottom: 2rem;
+    position: relative;  /* Necesario para el posicionamiento absoluto de los hijos */
     height: 100vh;      /* Ocupa el 100% del alto de la pantalla */
     width: 100%;        /* Ocupa el 100% del ancho */
-    overflow: hidden;
+    overflow: hidden;   /* Evita desbordamientos */
 }
 
-.hero > img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.hero h1 {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 1rem 2rem;
-    font-size: 2.5rem;
-    text-align: center;
-    color: var(--primary-color);
-    border-radius: 8px;
-}
-
-.hero article {
+.hero-bg {
     position: absolute;
-    bottom: 2rem;
-    left: 2rem;
-    right: 2rem;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 1rem;
-    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Cubre todo el espacio sin distorsión */
+    z-index: -1;       /* Manda la imagen al fondo */
 }
 
-.hero article img {
-    float: right;
-    margin: 0 0 1rem 1rem;
-    width: 200px;
-    border-radius: 4px;
+.hero-text {
+    position: absolute;
+    top: 50%;                   /* Lo coloca en el 50% desde arriba */
+    left: 50%;                  /* Lo coloca en el 50% desde la izquierda */
+    transform: translate(-50%, -50%); /* Ajuste preciso al centro */
+    text-align: center;         /* Centra el texto internamente */
+    width: 80%;                 /* Ancho máximo del bloque de texto */
+    max-width: 800px;           /* Evita que el texto sea demasiado ancho */
+    color: white;               /* Color del texto (ajusta según tu diseño) */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para legibilidad */
+    padding: 2rem;              /* Espaciado interno */
+    border-radius: 8px;         /* Bordes redondeados */
 }
 
-.hero article p {
-    color: var(--primary-color);
-    font-size: 1.1rem;
-    margin: 0;
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 /* History Section */
