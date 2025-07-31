@@ -38,7 +38,7 @@ header, main, footer {
     top: 1em;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #ffffff25;
+    background-color: #0000002b;
     color: #fff;
     padding: 1rem;
     font-size: 3em;
@@ -46,7 +46,7 @@ header, main, footer {
 }
 
 .hero article{
-    background-color: #ffffff25;
+    background-color: #2d2d2d4d;
     position: absolute;
     top: 15rem;
     left: 2rem;
@@ -113,7 +113,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #242424;
+    background-color: #242424ed;
     margin-top: 100px;
 }
 
