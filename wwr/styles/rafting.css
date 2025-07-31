@@ -38,7 +38,7 @@ header, main, footer {
     top: 1em;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #ffffff62;
+    background-color: #ffffff25;
     color: #fff;
     padding: 1rem;
     font-size: 3em;
@@ -46,7 +46,7 @@ header, main, footer {
 }
 
 .hero article{
-    background-color: #ffffff47;
+    background-color: #ffffff25;
     position: absolute;
     top: 15rem;
     left: 2rem;
@@ -239,10 +239,9 @@ figcaption {
     color: var(--primary-color);
 }
 
-/* rule by mr borcheds */
-/*this only put if i need to add, if not, do not add
-header, main, footer {
-  width: 1200px;
-  margin: 0 auto;
+/* cambio de color de los dos recueadros solo las letras*/
+
+.adventures figure:nth-of-type(2) figcaption,
+.adventures figure:nth-of-type(4) figcaption {
+    color: #fff;
 }
-*/
