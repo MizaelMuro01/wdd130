@@ -87,7 +87,7 @@ header {
     display: grid;
     grid-template-columns: 200px auto;
     align-items: center;
-    background-color: #fff;
+    background-color: #003495;
 }
 
 /* color del tema de header #003495*/
@@ -242,7 +242,7 @@ figcaption {
 /* rule by mr borcheds */
 
 header, main, footer {
-  width: 840px;
+  width: 1200px;
   margin: 0 auto;
 }
 
