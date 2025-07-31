@@ -87,8 +87,10 @@ header {
     display: grid;
     grid-template-columns: 200px auto;
     align-items: center;
-    background-color: #003495;
+    background-color: #fff;
 }
+
+/* color del tema de header #003495*/
 
 nav {
     display: flex;
@@ -236,3 +238,12 @@ figcaption {
     font-weight: 500;
     color: var(--primary-color);
 }
+
+/* rule by mr borcheds */
+
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* ------------ */
