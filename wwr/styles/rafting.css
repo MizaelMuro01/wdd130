@@ -46,7 +46,7 @@ header, main, footer {
 }
 
 .hero article{
-    background-color: #ffffff61;
+    background-color: #ffffff47;
     position: absolute;
     top: 15rem;
     left: 2rem;
@@ -60,7 +60,7 @@ header, main, footer {
 }
 
 .hero article p {
-    color: var(--secondary-color);;
+    color: #fff;
     font-size: 1.5rem;
     padding: 1rem;
     font-weight: 500;
@@ -87,7 +87,7 @@ header {
     display: grid;
     grid-template-columns: 200px auto;
     align-items: center;
-    background-color: #003495;
+    background-color: var(--accent2-color);
 }
 
 /* color del tema de header #003495*/
