@@ -647,3 +647,8 @@ footer {
     overflow: hidden;
     margin-top: 1rem;
 }
+
+/* Cambiar solo Dylan - Safety Expert a blanco */
+.team-member:nth-child(2) figcaption {
+    color: white !important;
+}
