@@ -91,6 +91,13 @@ header {
 }
 
 /* color del tema de header #003495*/
+.logo img {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+}
+
+/*Tamaño del logo en el header */
 
 nav {
     display: flex;
