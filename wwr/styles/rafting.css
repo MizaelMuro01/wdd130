@@ -85,16 +85,23 @@ footer{
 
 header {
     display: grid;
-    grid-template-columns: 200px auto;
+    grid-template-columns: auto 1fr;
     align-items: center;
     background-color: var(--accent2-color);
+    padding: 0 20px;
+}
+
+.logo {
+    width: 150px;
 }
 
 /* color del tema de header #003495*/
+
 .logo img {
-    width: 150px;
+    width: 100%;
     height: auto;
-    padding: 10px;
+    max-width: 150px;
+    display:block;
 }
 
 /*Tamaño del logo en el header */
