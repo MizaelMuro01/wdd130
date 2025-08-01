@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Rafting Company Name</title>
-    <meta name="description" content="Contact information and form for Rafting Company Name">
+    <title>Contact Us | White Water Rafting</title>
+    <meta name="description" content="Contact Dry Oar Rafting for adventure inquiries and reservations">
     <meta name="author" content="Mizael Muro">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
-
 <body>
     <header>
-        <img src="image/logo.png" alt="Rafting Company Logo">
+        <img src="images/logo.png" alt="Rafting Site Logo" class="logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -24,22 +19,102 @@
         </nav>
     </header>
 
-    <main>
+    <main class="contact-page">
+        <div class="hero">
+            <h1>White Water Rafting</h1>
+            <p>Founded in 1995, Dry Oar Rafting began as a small family business with a passion for outdoor adventures.</p>
+        </div>
+
+        <div class="contact-container">
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+                <address>
+                    123 River Road<br>
+                    Adventure City, AC 12345<br>
+                    Phone: (555) 123-4567<br>
+                    Email: info@dryoarrafting.com
+                </address>
+                <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-123.456789!3d45.678901"
+                    width="600" height="450" allowfullscreen loading="lazy">
+                </iframe>
+                </div>
+            </section>
+
+            <section class="employee-profiles">
+                <h2>Our Team</h2>
+                <div class="employees">
+                    <figure>
+                        <img src="image/guide1.jpeg" alt="Rafting guide smiling">
+                        <figcaption>Mike - Head Guide</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="image/guide2.jpeg" alt="Safety instructor smiling">
+                        <figcaption>Sarah - Safety Expert</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="image/guide3.jpeg" alt="Customer service representative smiling">
+                        <figcaption>David - Reservations</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="commentForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend>Purpose of Message:</legend>
+                            <div class="radio-group">
+                                <input type="radio" id="general" name="purpose" value="general" checked>
+                                <label for="general">General Inquiry</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="reservation" name="purpose" value="reservation">
+                                <label for="reservation">Reservation Question</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                                <label for="suggestion">Website Suggestion</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>&copy;2025 | Rafting Website | Mizael Muro</p>
-        <div class="social">
+        <p>&copy;2025 Dry Oar Rafting | Mizael Muro</p>
+        <div class="social-links">
             <a href="https://facebook.com" target="_blank">
-                <img src="image/fb-logo.png" alt="Facebook">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.svg" alt="Twitter">
             </a>
             <a href="https://instagram.com" target="_blank">
-                <img src="image/insta-logo.png" alt="Instagram">
-            </a>
-            <a href="https://x.com" target="_blank">
-                <img src="image/X_logo.jpg" alt="Twitter">
+                <img src="images/instagram.svg" alt="Instagram">
             </a>
         </div>
+        <a href="images/contact-wireframe.png" class="wireframe-link">View Wireframe</a>
     </footer>
 </body>
 </html>
