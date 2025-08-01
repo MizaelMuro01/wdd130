@@ -260,6 +260,10 @@ figcaption {
     color: #fff;
 }
 
+.contact figure:nth-last-of-type(2) figcaption {
+    color: #fff
+}
+
 /* Diseño de la pagina de Contacto */
 .contact-page .hero {
     position: relative;
