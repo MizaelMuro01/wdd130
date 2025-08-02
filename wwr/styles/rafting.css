@@ -144,8 +144,11 @@ footer p {
     gap: 1rem
 }
 
-.sociallinks img {
-    width: 2rem;
+.social-links img {
+    filter: brightness(0) invert(1);
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
 }
 
 .sociallinks a:hover {
@@ -649,6 +652,8 @@ footer {
 }
 
 /* Cambiar solo Dylan - Safety Expert a blanco */
-.team-member:nth-child(2) figcaption {
-    color: white !important;
+/* Cambia SOLO el texto de Dylan a blanco */
+.team-member:nth-child(2) figcaption,
+.team-member:nth-child(2) figcaption strong {
+    color: #fff !important;
 }
