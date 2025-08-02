@@ -110,7 +110,6 @@ footer p {
     height: 28px;
     object-fit: contain;
     display: block;
-    filter: brightness(0) invert(1);
 }
 
 .wireframe-link {
@@ -229,20 +228,28 @@ footer p {
 }
 
 /* Team section */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .team-member {
     text-align: center;
-    margin: 0 auto;
-    max-width: 200px;
 }
 
 .team-member img {
-    width: 180px;
-    height: 180px;
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
     object-fit: cover;
     object-position: center top;
+    border: 3px solid var(--accent1-color);
     border-radius: 0;
+    margin: 0 auto;
     display: block;
-    margin: 0 auto 10px;
 }
 
 .team-member figcaption {
@@ -255,7 +262,7 @@ footer p {
     color: var(--primary-color);
 }
 
-/* Responsive */
+/* Responsive 
 @media (max-width: 768px) {
     .contact-container {
         grid-template-columns: 1fr;
@@ -280,3 +287,5 @@ footer p {
         justify-self: center;
     }
 }
+
+vamos a ver si no lo necesita */
