@@ -658,3 +658,9 @@ footer {
 .team-member:nth-child(2) figcaption strong {
     color: #fff !important;
 }
+
+/* Cambia el texto de todos los miembros del equipo a blanco */
+.team-member figcaption,
+.team-member figcaption strong {
+    color: #fff !important;
+}
