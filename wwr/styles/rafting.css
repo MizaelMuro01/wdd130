@@ -274,35 +274,15 @@ footer p {
 
 .team-member figcaption strong {
     font-weight: 600;
-    color: var(--primary-color); /* Nombre en color primario */
+    color: var(--primary-color);
     display: block;
     margin-bottom: 5px;
 }
 
-/* Responsive 
-@media (max-width: 768px) {
-    .contact-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .form-row {
-        grid-template-columns: 1fr;
-    }
-    
-    .team-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    footer {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .social-links,
-    .wireframe-link {
-        grid-column: 1;
-        justify-self: center;
-    }
-}
+/**** mapa de google maps ----------*/
 
-vamos a ver si no lo necesita */
+.map-iframe {
+    border: 0;
+    width: 100%;
+    height: 450px;
+}
