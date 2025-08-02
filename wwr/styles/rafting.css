@@ -28,62 +28,39 @@ header, main, footer {
 }
 
 /* Header ------------------------------------------------------------------- */
-/* Header Styles - Alineación exacta con wireframe */
 header {
-    display: flex;
-    justify-content: space-between; /* Distribución equilibrada */
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     background-color: var(--accent2-color);
-    padding: 15px 40px;
-    max-width: 1400px;
-    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .logo {
-    width: auto;
-    flex: 0 0 auto;
+    width: 150px;
 }
 
 .logo img {
-    height: 50px; /* Altura fija para el logo */
-    width: auto;
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    display: block;
 }
 
 nav {
     display: flex;
-    gap: 30px; /* Espacio entre enlaces */
-    flex: 1; /* Ocupa el espacio disponible */
-    justify-content: center; /* Centra los enlaces */
-    padding: 0 20px;
+    justify-content: flex-end;
 }
 
 nav a {
-    color: white;
+    padding: 1em;
+    color: var(--nav-link-color);
     font-family: var(--heading-font);
-    font-weight: 500;
-    font-size: 1.1rem;
-    padding: 5px 0;
-    position: relative;
-    white-space: nowrap;
 }
 
 nav a:hover {
-    color: white;
-}
-
-nav a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: white;
-    transition: width 0.3s ease;
-}
-
-nav a:hover::after {
-    width: 100%;
+    background-color: #fff;
+    color: #484848cc;
 }
 
 /* Hero section */
