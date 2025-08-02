@@ -3,6 +3,7 @@
     --secondary-color: #6250FF;
     --accent1-color: #6250FF;
     --accent2-color: #16639E;
+    --nav-link-color: #fff;
 
     --heading-foot: 'Montserrat', serif;
     --paragraph-font: 'Roboto', sans-serif;
@@ -29,7 +30,7 @@ header, main, footer {
     position: relative;
 }
 
-.hero>img{
+.hero > img{
     width: 100%
 }
 
@@ -169,7 +170,7 @@ footer p {
     padding: 1em 0;
 }
 
-figure: nth-of-type ( odd) {
+figure:nth-of-type(odd) {
     background-color: var(--accent1-color);
     color: var(--nav-link-color);
     align-self: center;
