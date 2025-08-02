@@ -28,44 +28,62 @@ header, main, footer {
 }
 
 /* Header ------------------------------------------------------------------- */
+/* Header Styles - Alineación exacta con wireframe */
 header {
-    display: grid;
-    grid-template-columns: 150px 1fr;
+    display: flex;
+    justify-content: space-between; /* Distribución equilibrada */
     align-items: center;
     background-color: var(--accent2-color);
-    padding: 10px 20px;
+    padding: 15px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .logo {
-    width: 100%;
+    width: auto;
+    flex: 0 0 auto;
 }
 
 .logo img {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    display: block;
+    height: 50px; /* Altura fija para el logo */
+    width: auto;
 }
 
 nav {
     display: flex;
-    justify-content: flex-end;
-    gap: 10px;
+    gap: 30px; /* Espacio entre enlaces */
+    flex: 1; /* Ocupa el espacio disponible */
+    justify-content: center; /* Centra los enlaces */
+    padding: 0 20px;
 }
 
 nav a {
     color: white;
     font-family: var(--heading-font);
     font-weight: 500;
-    padding: 10px 15px;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    text-align: center;
+    font-size: 1.1rem;
+    padding: 5px 0;
+    position: relative;
+    white-space: nowrap;
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
     color: white;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
 }
 
 /* Hero section */
