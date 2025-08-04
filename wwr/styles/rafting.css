@@ -157,7 +157,7 @@ footer p {
     gap: 40px;
 }
 
-/* INICIO DE CORRECCIONES PARA EL FORMULARIO */
+/* CORRECCIONES PARA EL FORMULARIO -----------------------------*/
 .contact-form-section {
     background: white;
     padding: 25px;
@@ -256,7 +256,7 @@ footer p {
     width: 16px;
     height: 16px;
 }
-/* FIN DE CORRECCIONES PARA EL FORMULARIO */
+/* CIERRE CORRECCIONES PARA EL FORMULARIO -----------------------*/
 
 .team-section {
     grid-column: 1 / -1;
