@@ -232,15 +232,17 @@ footer p {
 }
 
 .history img {
-    width: 100%;
-    max-width: 800px;
-    margin: 1rem auto;
-    border-radius: 8px;
+    grid-column: 2/3;
+    grid-row: 2;
 }
 
 .history-section {
-    text-align: center;
-    padding: 2rem 1rem;
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 20px;
+    text-align: justify;
+    align-items: center;
 }
 
 .history-section img {
