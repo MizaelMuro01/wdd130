@@ -113,7 +113,6 @@ footer p {
 /*------------------HERO SECTION-------------------*/
 .hero {
     position: relative;
-    margin-bottom: 2rem;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -127,16 +126,34 @@ footer p {
 
 .hero h1 {
     position: absolute;
-    top: 50%;
+    top: 1em;
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    width: 100%;
-    text-align: center;
-    background-color: transparent;
-    padding: 0;
+    transform: translateX(-50%);
+    background-color: #ffffff61;
+    padding: 1rem;
+    color: #fff /* este puede ser modificado */
+    font-size: 3em;
+}
+
+.hero article{
+    background-color: #ffffff61;
+    position: absolute;
+    top: 15rem;
+    left: 2rem;
+    right: 2rem;
+}
+
+.hero article img{
+    float: right;
+    margin: 2rem;
+    width: 13rem;
+}
+
+.hero article p {
+    color: var(--secondary-color)
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weigth: 500;
 }
 
 /* ------------------ ABOUT PAGE --------------- */
