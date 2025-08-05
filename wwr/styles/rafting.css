@@ -660,12 +660,12 @@ figure:nth-of-type(even) {
     color: var(--nav-link-color);
     align-self: center;
 }
-*/
+
 figcaption {
     text-align: center;
     padding: 1em 0;
 }
-
+*/
 .history {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
