@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
-
 <body class="home">
     <header>
-        <img src="images/logo.png" alt="Rafting Site Logo" class="logo">
+        <div class="logo">
+            <img src="images/logo.png" alt="Rafting Site Logo">
+        </div>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -25,21 +25,21 @@
     </header>
 
     <main>
-        <div class="hero">
-            <img src="images/rafting-hero.jpg" alt="rafting-hero">
+        <section class="hero">
+            <img src="images/rafting-hero.jpg" alt="Rafting adventure">
             <h1>Experience the Adventure of a Lifetime!</h1>
-        </div>
+        </section>
 
         <section class="newsletter">
             <h2>Sign Up for Our Newsletter</h2>
             <form>
                 <div class="form-group">
-                    <label for="newsletter-name">Name</label>
-                    <input type="text" id="newsletter-name" name="name" required>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
                 <div class="form-group">
-                    <label for="newsletter-email">Email</label>
-                    <input type="email" id="newsletter-email" name="email" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <button type="submit" class="submit-btn">Subscribe</button>
             </form>
@@ -48,29 +48,19 @@
         <section class="cta">
             <h2>Ready for an Adventure?</h2>
             <p>Check out our amazing trips and book your rafting experience today!</p>
-            <a href="trips.html" class="cta-button">View Our Trips</a>
+            <a href="trips.html" class="cta-btn">View Our Trips</a>
         </section>
 
         <section class="grid-layout">
             <div class="grid-item">
-                <img src="images/rafting-fun.jpg" alt="rafting-fun">
+                <img src="images/rafting-fun.jpg" alt="Group rafting">
                 <h3>Fun for Everyone</h3>
-                <p>Our rafting tours are perfect for families, friends, and team building events.</p>
+                <p>Perfect for families and teams!</p>
             </div>
             <div class="grid-item">
-                <img src="images/rafting-nature.jpg" alt="rafting-nature">
+                <img src="images/rafting-nature.jpg" alt="Nature view">
                 <h3>Connect with Nature</h3>
-                <p>Experience the beauty of the river and surrounding wilderness.</p>
-            </div>
-            <div class="grid-item">
-                <img src="images/rafting-safety.jpg" alt="rafting-guide">
-                <h3>Safety First</h3>
-                <p>All our tours are guided by certified professionals with top-notch equipment.</p>
-            </div>
-            <div class="grid-item">
-                <img src="images/rafting-thrill.jpg" alt="rafting-thrill">
-                <h3>Thrilling Rapids</h3>
-                <p>Challenge yourself with our exciting class III-IV rapids.</p>
+                <p>Explore breathtaking landscapes.</p>
             </div>
         </section>
     </main>
@@ -83,9 +73,6 @@
             </a>
             <a href="https://instagram.com" target="_blank">
                 <img src="images/instagram-logo.png" alt="Instagram">
-            </a>
-            <a href="https://x.com" target="_blank">
-                <img src="images/twitter-logo.jpg" alt="Twitter">
             </a>
         </div>
     </footer>
