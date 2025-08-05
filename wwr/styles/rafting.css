@@ -150,6 +150,7 @@ footer p {
     width: 100%;
     height: 300px;
     object-fit: cover;
+    display: block;
 }
 
 /* Sección About - About Page */
