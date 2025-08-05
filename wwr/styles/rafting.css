@@ -618,13 +618,13 @@ footer p {
 .history-section p:first-of-type {
     grid-column: 1 / 2;
     grid-row: 2;
-    padding: 0 40px;
+    padding: 0 60px;
 }
 
 .history-section p:last-of-type {
     grid-column: 3 / 4;
     grid-row: 2;
-    padding: 0 40px;
+    padding: 0 60px;
 }
 
 .history-section>h2 {
