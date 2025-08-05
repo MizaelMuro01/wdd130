@@ -594,13 +594,12 @@ footer p {
 
 .abs-article p {
     color: #1e1a1a;
-    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
     font-size: x-large;
     text-align: center;
 }
 
 /*seccion de correcciones*/
-/*
+
 .history-section {
     margin: 50px 0;
     display: grid;
@@ -609,18 +608,6 @@ footer p {
     align-items: center;
     text-align: justify;
 }
-*/
-.history-section{
-    margin: 50px auto; /* Centra la sección horizontalmente */
-    max-width: 1200px; /* Limita el ancho máximo del contenido */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Columnas más equilibradas */
-    gap: 30px; /* Más espacio entre columnas */
-    align-items: center;
-    text-align: justify;
-    padding: 0 40px; /* Añade padding general a la sección */
-}
-
 
 .history-img {
     grid-column: 2 / 3;
