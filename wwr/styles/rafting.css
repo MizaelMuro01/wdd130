@@ -648,7 +648,7 @@ footer p {
     justify-self: center;
     padding: 1em 0;
 }
-
+/*
 figure:nth-of-type(odd) {
     background-color: var(--accent1-color);
     color: var(--nav-link-color);
@@ -661,7 +661,7 @@ figure:nth-of-type(even) {
     color: var(--nav-link-color);
     align-self: center;
 }
-
+*/
 figcaption {
     text-align: center;
     padding: 1em 0;
