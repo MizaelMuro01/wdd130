@@ -641,7 +641,7 @@ footer p {
     gap: 1rem;
     justify-items: center;
 }
-
+/*
 .history h2,
 .adventures h2 {
     grid-column: 1/-1;
@@ -661,7 +661,7 @@ figure:nth-of-type(even) {
     color: var(--nav-link-color);
     align-self: center;
 }
-
+*/
 figcaption {
     text-align: center;
     padding: 1em 0;
