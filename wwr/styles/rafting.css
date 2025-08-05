@@ -129,14 +129,14 @@ footer p {
     top: 1em;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #ffffff61;
+    background-color: #ffffffac;
     padding: 1rem;
     color: #fff /* este puede ser modificado */
     font-size: 3em;
 }
 
 .hero article{
-    background-color: #ffffff61;
+    background-color: #ffffffbb;
     position: absolute;
     top: 15rem;
     left: 2rem;
