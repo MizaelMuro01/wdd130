@@ -1,4 +1,4 @@
-/*-----------------------------------------VARIABLES Y ESTILOS GLOBALES---------------------------------*/
+/* ---------------------STYLE----------*/
 :root {
     --primary-color: #003495;
     --secondary-color: #6250FF;
@@ -30,7 +30,7 @@ img {
     max-width: 100%;
 }
 
-/*------------------------------------------HEADER----------------------------------*/
+/* ------------------------HEADER---------------------*/
 header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -68,7 +68,49 @@ nav a:hover {
     color: #484848cc;
 }
 
-/*---------------------------------HERO SECTIONS--------------------------------*/
+/*---------------FOOTER------- */
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    padding: 20px;
+    background-color: #242424;
+    margin-top: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+footer p {
+    color: #fff;
+}
+
+.social {
+    grid-column: 3;
+    display: flex;
+    gap: 15px;
+    justify-self: end;
+}
+
+.social img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    display: block;
+}
+
+.wireframe-link {
+    grid-column: 2;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-right: 20px;
+}
+
+
+/*------------------HERO SECTION-------------------*/
 .hero {
     position: relative;
     max-width: 1400px;
@@ -89,11 +131,11 @@ nav a:hover {
     transform: translateX(-50%);
     background-color: #ffffffac;
     padding: 1rem;
-    color: #fff;
+    color: #fff /* este puede ser modificado */
     font-size: 3em;
 }
 
-.hero article {
+.hero article{
     background-color: #ffffffbb;
     position: absolute;
     top: 15rem;
@@ -101,20 +143,21 @@ nav a:hover {
     right: 2rem;
 }
 
-.hero article img {
+.hero article img{
     float: right;
     margin: 2rem;
     width: 13rem;
 }
 
 .hero article p {
-    color: var(--secondary-color);
+    color: var(--secondary-color)
     font-size: 1.5rem;
     padding: 1rem;
     font-weigth: 500;
 }
 
-/*--------------------------------Hero - About Page-------------------------*/
+/* ------------------ ABOUT PAGE --------------- */
+/* Sección Hero - About Page */
 .hero-about {
     position: relative;
     text-align: center;
@@ -125,6 +168,25 @@ nav a:hover {
     height: 300px;
     object-fit: cover;
     display: block;
+}
+
+/* Sección About - About Page */
+.about-section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    color: var(--accent2-color);
+    margin-bottom: 1.5rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
 }
 
 .about-page .hero {
@@ -150,7 +212,28 @@ nav a:hover {
     text-align: center;
 }
 
-/*---------------------------------------Hero - Contact Page--------------------------------*/
+.about-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    color: var(--accent2-color);
+    margin-bottom: 1.5rem;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+
+/*------------------------------- CONTACT PAGE ----------------------*/
+/* Hero - Contact Page */
 .contact-page .hero {
     height: 200px;
     overflow: hidden;
@@ -174,45 +257,7 @@ nav a:hover {
     color: #333;
 }
 
-/*---------------------------------ABOUT PAGE-----------------------------------*/
-.about-section {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.about-section h2 {
-    font-size: 2rem;
-    color: var(--accent2-color);
-    margin-bottom: 1.5rem;
-}
-
-.about-section p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-.about-content {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    text-align: center;
-}
-
-.about-content h2 {
-    font-size: 2rem;
-    color: var(--accent2-color);
-    margin-bottom: 1.5rem;
-}
-
-.about-content p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 2rem;
-}
-
-/*----------------------------------CONTACT PAGE----------------------------*/
+/* Formulario - Contact Page */
 .contact-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -321,7 +366,7 @@ nav a:hover {
     height: 16px;
 }
 
-/*----------------------Team Section-------------------------------------*/
+/* Team Section - Contact Page */
 .team-section {
     grid-column: 1 / -1;
     margin-top: 40px;
@@ -379,7 +424,39 @@ nav a:hover {
     height: 450px;
 }
 
-/*---------------------HISTORY SECTION---------------------*/
+
+.abs-heading1 {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(56, 59, 103, 0.6);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.abs-article {
+    background-color: rgba(255, 255, 255, .35);
+    position: absolute;
+    top: 6rem;
+    left: 6rem;
+    right: 6rem;
+}
+
+.abs-article img {
+    float: right;
+    margin: 2rem;
+    width: 15rem;
+}
+
+.abs-article p {
+    color: #1e1a1a;
+    font-size: x-large;
+    text-align: center;
+}
+
+/*seccion de correcciones*/
+
 .history-section {
     margin: 50px 0;
     display: grid;
@@ -413,14 +490,6 @@ nav a:hover {
     padding-bottom: 1rem;
 }
 
-.history {
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    gap: 2em;
-    margin: 50px 0;
-}
-
-/*------------------------ADVENTURES SECTION-------------------------*/
 .adventures {
     margin: 50px 0;
     display: grid;
@@ -441,74 +510,9 @@ figcaption {
     padding: 1em 0;
 }
 
-/*-------------------FOOTER------------------------*/
-footer {
+.history {
     display: grid;
-    grid-template-columns: 1fr auto auto;
-    align-items: center;
-    padding: 20px;
-    background-color: #242424;
-    margin-top: 50px;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-footer p {
-    color: #fff;
-}
-
-.social {
-    grid-column: 3;
-    display: flex;
-    gap: 15px;
-    justify-self: end;
-}
-
-.social img {
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
-    display: block;
-}
-
-.wireframe-link {
-    grid-column: 2;
-    color: white;
-    text-decoration: none;
-    padding: 8px 15px;
-    border: 1px solid white;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    margin-right: 20px;
-}
-
-/*-----------------------UTILITY CLASSES ------------------------*/
-.abs-heading1 {
-    position: absolute;
-    top: 10px;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    background-color: rgba(56, 59, 103, 0.6);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-.abs-article {
-    background-color: rgba(255, 255, 255, .35);
-    position: absolute;
-    top: 6rem;
-    left: 6rem;
-    right: 6rem;
-}
-
-.abs-article img {
-    float: right;
-    margin: 2rem;
-    width: 15rem;
-}
-
-.abs-article p {
-    color: #1e1a1a;
-    font-size: x-large;
-    text-align: center;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 2em;
+    margin: 50px 0;
 }
