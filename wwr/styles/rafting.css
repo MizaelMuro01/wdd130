@@ -602,14 +602,14 @@ footer p {
 .trips-cta {
     text-align: center;
     padding: 2rem;
-    background-color: #16639E;
+    /*background-color: #16639E;*/
     color: white;
     margin: 2rem 0;
 }
 
 .trips-cta .cta-btn {
     display: inline-block;
-    background-color: #FF6B35;
+    background-color: #16639E;
     color: white;
     padding: 12px 25px;
     border-radius: 5px;
@@ -691,11 +691,6 @@ footer p {
 .trips-table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
-
-.trips-table tr:hover {
-    background-color: #e6f2ff;
-}
-
 
 /*seccion de correcciones*/
 
