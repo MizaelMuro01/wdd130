@@ -598,11 +598,19 @@ footer p {
     font-size: 2.5rem;
 }
 
+.trips .cta h2{
+    color:#1e1a1a;
+}
+
+.trips .cta p{
+    color:#000;
+}
+
+
 /* Call to Action */
 .trips-cta {
     text-align: center;
     padding: 2rem;
-    /*background-color: #16639E;*/
     color: white;
     margin: 2rem 0;
 }
