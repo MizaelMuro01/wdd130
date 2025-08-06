@@ -455,7 +455,7 @@ footer p {
     text-align: center;
 }
 
-/*---------Home Page Styles/index--------------*/
+/*----------------------------------------Home Page Styles/index--------------*/
 .home .hero {
     position: relative;
     height: 60vh;
@@ -572,6 +572,130 @@ footer p {
     border-radius: 5px;
     margin-top: 15px;
 }
+
+/*-------------------------------------------------------------Trips Page Styles---------------------*/
+.trips .trips-hero {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.trips .trips-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trips .trips-hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 52, 149, 0.7);
+    padding: 15px 30px;
+    font-size: 2.5rem;
+}
+
+/* Call to Action */
+.trips-cta {
+    text-align: center;
+    padding: 2rem;
+    background-color: #16639E;
+    color: white;
+    margin: 2rem 0;
+}
+
+.trips-cta .cta-btn {
+    display: inline-block;
+    background-color: #FF6B35;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* Featured Trips */
+.featured-trips {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
+}
+
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.trip-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-content {
+    padding: 1.5rem;
+}
+
+.trip-content h3 {
+    color: #003495;
+    margin-top: 0;
+}
+
+.trip-content ul {
+    padding-left: 1.2rem;
+}
+
+.trip-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Trips Table */
+.trips-table {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem 4rem;
+    overflow-x: auto;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.trips-table th, 
+.trips-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.trips-table th {
+    background-color: #003495;
+    color: white;
+}
+
+.trips-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.trips-table tr:hover {
+    background-color: #e6f2ff;
+}
+
 
 /*seccion de correcciones*/
 
