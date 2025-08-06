@@ -528,18 +528,45 @@ footer p {
     object-fit: cover;
     border-radius: 8px;
 }
+/*pilas con esto de abajo*/
+.home .grid-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
 
+.home .grid-item h3 {
+    color: #003495;
+    padding: 10px 15px 0;
+    margin: 0;
+}
+
+.home .grid-item p {
+    color: #666;
+    padding: 0 15px 15px;
+    margin: 0;
+}
+/*pilas con esto de arriba*/
 /* Call to Action */
 .home .cta {
     text-align: center;
     padding: 30px;
-    background-color: #003495;
+    background-color: #ffff;
     color: white;
+}
+
+.home .cta h2{
+    color:#1e1a1a;
+}
+
+.home .cta p{
+    color:#000;
 }
 
 .home .cta-btn {
     display: inline-block;
-    background-color: #FF6B35;
+    background-color: #16639E;
     color: white;
     padding: 12px 30px;
     border-radius: 5px;
