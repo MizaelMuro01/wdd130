@@ -170,6 +170,10 @@ footer p {
     display: block;
 }
 
+.hero h1{
+    color:#000
+}
+
 /* Sección About - About Page */
 .about-section {
     padding: 2rem;
