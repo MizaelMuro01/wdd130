@@ -9,12 +9,6 @@
     --paragraph-font: 'Roboto', sans-serif;
 }
 
-header, main, footer {
-    min-width: 840px;  /* Obliga a mantener 840px (como antes) */
-    max-width: 840px;  /* Cumple con el requisito del profesor */
-    margin: 0 auto;    /* Centrado */
-}
-
 body {
     font-family: var(--paragraph-font);
     margin: 0;
