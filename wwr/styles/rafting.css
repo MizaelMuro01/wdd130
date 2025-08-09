@@ -10,9 +10,9 @@
 }
 
 header, main, footer {
-    max-width: 840px;
-    margin: 0 auto;
-    width: 100%;
+    min-width: 840px;  /* Obliga a mantener 840px (como antes) */
+    max-width: 840px;  /* Cumple con el requisito del profesor */
+    margin: 0 auto;    /* Centrado */
 }
 
 body {
