@@ -9,6 +9,11 @@
     --paragraph-font: 'Roboto', sans-serif;
 }
 
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
 body {
     font-family: var(--paragraph-font);
     margin: 0;
